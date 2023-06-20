@@ -17,6 +17,7 @@ end_time = datetime.now()  # Now
 mr_count = Gauge('merge_requests_count', 'Total number of merge requests')
 issue_count = Gauge('issue_count', 'Total number of issues')
 
+
 # Define a function to update the metrics
 def update_metrics():
     # Get a list of all merge requests in the specified time window
